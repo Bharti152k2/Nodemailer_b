@@ -1,8 +1,8 @@
 const http = require("http");
 const subscribeMail = require("./mail");
 const allowedOrigins = [
-  "http://localhost:5173/",
-  "https://mailsenderui.netlify.app/",
+  "http://localhost:5173",
+  "https://mailsenderui.netlify.app",
 ];
 let server = http.createServer((req, res) => {
   const origin = req.headers.origin;
